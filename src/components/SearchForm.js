@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  `
 
 export default function SearchForm() {
   const [search, setSearch] = useState({name: ""});
@@ -14,6 +21,7 @@ export default function SearchForm() {
   };
 
   return (
+    <Div>
     <section className="search-form">
       <form onSubmit={event => handleSubmit(event)}>
         <label htmlFor="search">
@@ -29,5 +37,6 @@ export default function SearchForm() {
         <button type="submit">Submit</button>
       </form>
     </section>
+    </Div>
   );
 }
