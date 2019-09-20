@@ -20,7 +20,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <h2>Characters!</h2>
+      <h2>Characters of the show:</h2>
       <p>{Character.map( item=> {
         return <CharacterCard key={item.id }name={item.name} image={item.image} status={item.status}/>
       })}</p>

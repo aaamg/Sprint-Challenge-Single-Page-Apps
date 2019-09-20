@@ -17,7 +17,7 @@ export default function SearchForm() {
     <section className="search-form">
       <form onSubmit={event => handleSubmit(event)}>
         <label htmlFor="search">
-          Search: 
+          Search:  
           <input 
                 id="search" 
                 name="search"
