@@ -23,6 +23,8 @@ export default function CharacterCard(props) {
       <img src={props.image}/>
       <p>Name: {props.name}</p>
       <p>Status: {props.status}</p>
+      <p>Gender: {props.gender}</p>
+      <p>Species: {props.species}</p>
     </Contain>
     </Div>
   );
